@@ -6,4 +6,3 @@ variable "private_key_file" {
 }
 variable "aws_key_name" {
 }
-

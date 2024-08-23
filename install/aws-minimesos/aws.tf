@@ -1,11 +1,6 @@
-variable "aws_region" {
-  default = "eu-west-1"
-}
-
 provider "aws" {
   region = "${var.aws_region}"
-  access_key = "${var.access_key}"
-  secret_key = "${var.secret_key}"
+  # Credentials(access_key & secret_key) will be picked up from the environment or AWS CLI configuration
 }
 
 // Ubuntu 14.04 official hvm:ssd volumes to their region.
